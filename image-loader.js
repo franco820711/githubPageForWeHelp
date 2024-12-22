@@ -1,6 +1,4 @@
 export default function imageLoader({ src, width, quality }) {
-  const baseUrl = process.env.NODE_ENV === 'production' 
-    ? 'https://franco820711.github.io/githubPageForWeHelp' 
-    : '';
-  return `${baseUrl}${src}?w=${width}&q=${quality || 75}`
+  // src 已經包含了 /githubPageForWeHelp 前綴，所以這裡不需要再加
+  return `${src}?w=${width}&q=${quality || 75}`
 }
