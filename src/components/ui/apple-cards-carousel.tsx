@@ -281,6 +281,17 @@ export const Card = ({
             {card.title}
           </motion.p>
         </div>
+        {card.url && (
+          <div
+            className="absolute bottom-2 left-2 z-40 cursor-pointer flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(card.url, "_blank");
+            }}
+          >
+            <div className="text-black text-sm">Demo</div>
+          </div>
+        )}
         {card.videoUrl && (
           <div
             className="absolute bottom-2 right-2 z-40 cursor-pointer"
