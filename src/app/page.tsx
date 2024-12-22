@@ -46,7 +46,7 @@ export default function ApplicationLandingPage() {
       />
 
       <section className="bg-gray-50 relative w-screen left-[50%] right-[50%] -mx-[50vw]">
-        <div className="container mx-auto py-16 px-4 md:px-6 lg:px-8">
+        <div className="container mx-auto pt-8 px-4 md:px-6 lg:px-8">
           <AppleCardsCarouselDemo />
         </div>
       </section>
