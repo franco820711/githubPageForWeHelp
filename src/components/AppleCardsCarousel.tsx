@@ -224,4 +224,29 @@ const data = [
 
     videoUrl: "https://www.youtube.com/watch?v=rPV3aRjOOLo",
   },
+  {
+    category: "NextJS",
+    title: "MemoGPT\nAI智慧語音筆記",
+    src: getPublicPath("/memo3.png"),
+    content: (
+      <DummyContent
+        items={[
+          {
+            title: "產品特色",
+            content:
+              "創新的AI語音筆記應用，讓記錄生活更加輕鬆。只要開啟錄音，AI 就能自動分析語音內容，提取關鍵字並生成結構化筆記。支援時間軸瀏覽，讓您輕鬆回顧每一天的重要時刻。完整的歷史記錄管理，配合智慧封存功能，幫助您有效整理和保存珍貴的回憶。",
+            image: {
+              src: "/c7.png",
+              alt: "MemoGPT 應用介面展示",
+            },
+          },
+          {
+            title: "技術亮點",
+            content:
+              "採用 NextJS 打造現代化前端介面，使用 Web Speech API 實現即時語音轉文字功能，並運用 GPT API 進行文本摘要與關鍵字提取。",
+          },
+        ]}
+      />
+    ),
+  },
 ];
